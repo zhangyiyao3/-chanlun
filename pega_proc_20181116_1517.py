@@ -54,7 +54,7 @@ def buy_sell(INDEX,data_dir,debug=1):
         return ;
     print('processing ' + len_dir[INDEX].split('_')[1].split('.')[0])
     i = 0
-    while(True ):
+    while i < len(df):
         if ( df['low'][i] <=  df['low'][i+1] ) or (df['high'][i] <=  df['high'][i+1]):
             i = i + 1
         else :
